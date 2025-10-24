@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8000;
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:8080',
+  origin: "https://todo-list-frontend-cehv.onrender.com"  || process.env.FRONTEND_URL || 'http://localhost:8080',
   credentials: true
 }));
 app.use(express.json());
@@ -62,3 +62,4 @@ mongoose.connect("mongodb+srv://hosannaking2019_db_user:gJ7fFcmqiDLKJjg9@cluster
 });
 
 module.exports = app;
+
