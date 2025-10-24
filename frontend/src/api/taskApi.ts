@@ -1,7 +1,7 @@
 import { Task } from "@/components/TaskItem";
 
 // Base API URL - Update this to your backend URL
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://todo-list-backend-wr5c.onrender.com/api";
 
 // API client for task operations
 export const taskApi = {
